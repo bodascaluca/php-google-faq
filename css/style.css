@@ -19,12 +19,14 @@ img{
 .header{
     height: 120px;
     width: 100%;
+    background-color: white;
     border: 1px solid orange;
     position: fixed;
     top: 0;
     left: 0;
     flex-direction: column;
     justify-content: space-around;
+    z-index:9;
 }
 
 .header img{
@@ -32,11 +34,7 @@ img{
     height: 70px;
 }
 
-.header ul{
-
-}
-
-ul li{
+.ul li{
     list-style:none;
     color: grey;
     margin: 1rem;
@@ -45,6 +43,6 @@ ul li{
 /* MAIN  */
 .main{
     width: 80%;
-    margin: 8rem auto;
-    border: 1px solid red;
+    margin: 9rem auto;
+    z-index:0;
 }
