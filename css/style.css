@@ -1,0 +1,50 @@
+
+/* COMMON  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+
+img{
+    width: 100%;
+}
+
+/* HEADER */
+
+.header{
+    height: 120px;
+    width: 100%;
+    border: 1px solid orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header img{
+    width: 200px;
+    height: 70px;
+}
+
+.header ul{
+
+}
+
+ul li{
+    list-style:none;
+    color: grey;
+    margin: 1rem;
+}
+
+/* MAIN  */
+.main{
+    width: 80%;
+    margin: 8rem auto;
+    border: 1px solid red;
+}
