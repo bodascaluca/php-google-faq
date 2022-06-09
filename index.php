@@ -1,3 +1,11 @@
+<?php
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,6 +50,20 @@
       for($i = 0; $i < count($keys); $i++){
           $current_key = $keys[$i]; 
           echo "<h2>" . $current_key . "</h2>";
+          $current_key_array = $array[$current_key];
+
+          var_dump($current_key_array);
+          for($j = 0; $j < count($current_key_array); $j++){
+              
+              $current_array = $current_key_array[$j];
+            var_dump($current_array);
+
+            echo "<p>" . $current_array  . "</p>";
+            echo "<p>" . $current_array["risposta2"]  . "</p>";
+            echo "<p>" . $current_array["risposta3"]  . "</p>";
+            echo "<p>" . $current_array["risposta4"]  . "</p>";
+            echo "<p>" . $current_array["risposta5"]  . "</p>";
+            }
           }?>
     </main>
 
